@@ -13,6 +13,6 @@ from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
 
-gunicorn config.wsgi:application --bind 0.0.0.0:8000 --timeout 90
+
 
 application = get_wsgi_application()
